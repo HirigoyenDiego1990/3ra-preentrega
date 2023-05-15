@@ -1,0 +1,347 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Caveat&family=Comic+Neue:wght@300&family=Dancing+Script&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.cabeza {
+  width: 100%;
+  height: 120px;
+  background-color: white;
+}
+
+nav ul {
+  list-style: none;
+}
+nav li {
+  padding: 10px;
+  transition: all 0, 8s;
+}
+nav a {
+  color: orange;
+  text-shadow: 0 0 1px black;
+}
+nav :hover {
+  color: white;
+}
+
+.imgnos {
+  height: 400px;
+  width: 100%;
+  background-image: url(../imagenes/hermosa-mujer-joven-oficina-casa.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.frasnos {
+  font-family: "Pacifico", cursive;
+  margin: 10px;
+}
+.frasnos p {
+  font-size: "Dancing Script", cursive;
+  font-size: 20px;
+  text-align: right;
+  padding: 5px;
+}
+.frasnos span {
+  font-family: "Comic Neue", cursive;
+  color: orange;
+}
+
+.serv {
+  background-color: antiquewhite;
+  width: 100%;
+  height: 50px;
+}
+.serv h1 {
+  margin: 50px;
+  padding: 5px;
+  text-align: center;
+  font-size: 25px;
+}
+
+.servicios {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 1000px;
+  padding: 5px;
+  border: 2px solid black;
+}
+
+.sec,
+.sec1,
+.sec2 {
+  width: 100%;
+  height: 320px;
+  background-color: antiquewhite;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: bottom left;
+  border: 2px solid black;
+}
+.sec h2,
+.sec1 h2,
+.sec2 h2 {
+  text-align: right;
+  font-size: 20px;
+  margin: 10px;
+}
+.sec p,
+.sec1 p,
+.sec2 p {
+  color: orange;
+  margin: 10px;
+}
+
+.sec {
+  background-image: url(../imagenes/productos.png);
+}
+
+.sec1 {
+  background-image: url(../imagenes/movil2.png);
+}
+
+.sec2 {
+  background-image: url(../imagenes/diseñoweb2.jpg);
+}
+
+.contacto {
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  grid-template-rows: 300px;
+  border: 1px solid white;
+}
+
+.contacto1 {
+  background-image: url(../imagenes/cielo.jpg);
+  background-size: cover;
+}
+
+.contacto2 {
+  background-color: black;
+}
+.contacto2 p {
+  color: white;
+  font-size: 15px;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.form1 {
+  height: 200px;
+  background-image: url(../imagenes/comprobacion-datos-computadora-p.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.form2 {
+  height: 400px;
+  width: 100%;
+  text-align: right;
+  font-size: 20px;
+}
+
+.boton:hover {
+  color: salmon;
+}
+
+.servicios1 h1 {
+  text-align: center;
+  font-size: 25px;
+}
+
+.servicios2 {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 1000px;
+}
+.servicios2 h3 {
+  text-align: left;
+  color: orange;
+  font-size: 18px;
+  padding: 5px;
+}
+.servicios2 p {
+  text-align: left;
+  font-weight: bold;
+  padding: 5px;
+  line-height: 1, 5;
+}
+
+.serv1 p {
+  text-align: center;
+  color: orange;
+  font-style: italic;
+  padding: 10px;
+}
+
+.producto {
+  height: 1500px;
+  width: 100%;
+  background-color: antiquewhite;
+  padding: 5px;
+  border: 2px solid black;
+  display: flex;
+  flex-wrap: wrap;
+}
+.producto h3 {
+  color: orange;
+  padding: 10px;
+}
+.producto li {
+  color: salmon;
+  font-style: italic;
+}
+.producto .producto-img1 {
+  height: 200px;
+  width: 100%;
+  border: 2px solid orange;
+  background-color: white;
+  background-image: url(../imagenes/img1.png);
+  background-size: cover;
+  background-position: center;
+}
+.producto .producto-img2 {
+  height: 200px;
+  width: 100%;
+  border: 2px solid orange;
+  background-color: white;
+  background-image: url(../imagenes/img2.png);
+  background-size: cover;
+  background-position: center;
+}
+.producto .producto-img3 {
+  height: 200px;
+  width: 100%;
+  border: 2px solid orange;
+  background-color: white;
+  background-image: url(../imagenes/img3.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.blog {
+  width: 100%;
+  height: auto;
+  background-color: antiquewhite;
+  border: 2px solid black;
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.blog h2 {
+  font-size: 20px;
+  color: orange;
+}
+
+.nosotros {
+  width: 100%;
+  height: 400px;
+  background-color: antiquewhite;
+  border: 2px solid orange;
+  display: flex;
+  flex-wrap: wrap;
+}
+.nosotros span {
+  font-family: "Caveat";
+  font-size: 20px;
+  color: salmon;
+}
+.nosotros p {
+  margin: 10px;
+  text-align: left;
+  line-height: 1;
+  font-size: 15px;
+}
+.nosotros .carrusel {
+  height: 250px;
+  width: 100%;
+  padding: 12px;
+  background-color: antiquewhite;
+  background-position: bottom;
+}
+
+.formulario {
+  height: 800px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  border: 2px solid black;
+}
+
+.form1 {
+  height: 400px;
+  width: 100%;
+  background-image: url(../imagenes/comprobacion-datos-computadora-p.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.form2 {
+  background-color: white;
+  height: 300px;
+  width: 100%;
+  padding: 10px;
+  font-size: 15px;
+}
+.form2 h2 {
+  color: orange;
+  text-align: left;
+  text-decoration: underline;
+}
+
+.boton:hover {
+  color: salmon;
+}
+
+.footer {
+  width: 100%;
+  text-align: center;
+  font-size: 60%;
+  background-color: black;
+  color: white;
+  padding: 10px;
+}
+
+.redes {
+  border: 5px solid black;
+  background-color: black;
+}
+.redes a {
+  color: white;
+  font-size: 15px;
+  text-align: center;
+  margin: 3px;
+}
+.redes :hover {
+  color: salmon;
+}
+
+.subir {
+  width: 40px;
+  position: fixed;
+  right: 10px;
+  bottom: 50px;
+  color: salmon;
+  font-size: 30px;
+  text-align: center;
+}
+.subir :hover {
+  color: salmon;
+  transform: scale(0.9);
+}
+
+@media screen and (min-whidt: 768px) {
+  .nos {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+}/*# sourceMappingURL=estilos.css.map */
