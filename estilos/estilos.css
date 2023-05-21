@@ -11,7 +11,7 @@ html {
 }
 
 .cabeza {
-  width: 100%;
+  width: auto;
   height: 120px;
   background-color: white;
 }
@@ -31,15 +31,25 @@ nav :hover {
   color: white;
 }
 
+.nos {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
 .imgnos {
   height: 400px;
-  width: 100%;
+  width: 450px;
   background-image: url(../imagenes/hermosa-mujer-joven-oficina-casa.png);
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .frasnos {
+  height: 350px;
+  width: 280px;
   font-family: "Pacifico", cursive;
   margin: 10px;
 }
@@ -67,24 +77,25 @@ nav :hover {
 }
 
 .servicios {
-  display: flex;
-  flex-wrap: wrap;
+  height: auto;
   width: 100%;
-  height: 1000px;
+  background-color: antiquewhite;
   padding: 5px;
   border: 2px solid black;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
 .sec,
 .sec1,
 .sec2 {
-  width: 100%;
-  height: 320px;
-  background-color: antiquewhite;
-  background-repeat: no-repeat;
+  height: 350px;
+  width: 300px;
+  border: 2px solid antiquewhite;
   background-size: contain;
-  background-position: bottom left;
-  border: 2px solid black;
+  background-repeat: no-repeat;
+  background-position: bottom;
 }
 .sec h2,
 .sec1 h2,
@@ -113,6 +124,7 @@ nav :hover {
 }
 
 .contacto {
+  width: 100%;
   display: grid;
   grid-template-columns: repeat(2, 50%);
   grid-template-rows: 300px;
@@ -160,8 +172,9 @@ nav :hover {
 .servicios2 {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-around;
   width: 100%;
-  height: 1000px;
+  height: auto;
 }
 .servicios2 h3 {
   text-align: left;
@@ -183,14 +196,20 @@ nav :hover {
   padding: 10px;
 }
 
+.serv2, .serv3, .serv4 {
+  width: 250px;
+  height: 250px;
+}
+
 .producto {
-  height: 1500px;
+  height: auto;
   width: 100%;
   background-color: antiquewhite;
   padding: 5px;
   border: 2px solid black;
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-around;
 }
 .producto h3 {
   color: orange;
@@ -200,9 +219,15 @@ nav :hover {
   color: salmon;
   font-style: italic;
 }
+.producto .info1, .producto .info2, .producto .info3 {
+  height: 410px;
+  width: 270px;
+  padding: 5px;
+  border: 2px solid antiquewhite;
+}
 .producto .producto-img1 {
-  height: 200px;
-  width: 100%;
+  height: 410px;
+  width: 280px;
   border: 2px solid orange;
   background-color: white;
   background-image: url(../imagenes/img1.png);
@@ -210,8 +235,8 @@ nav :hover {
   background-position: center;
 }
 .producto .producto-img2 {
-  height: 200px;
-  width: 100%;
+  height: 410px;
+  width: 280px;
   border: 2px solid orange;
   background-color: white;
   background-image: url(../imagenes/img2.png);
@@ -219,8 +244,8 @@ nav :hover {
   background-position: center;
 }
 .producto .producto-img3 {
-  height: 200px;
-  width: 100%;
+  height: 410px;
+  width: 280px;
   border: 2px solid orange;
   background-color: white;
   background-image: url(../imagenes/img3.png);
@@ -229,6 +254,12 @@ nav :hover {
 }
 
 .blog {
+  text-align: center;
+  color: orange;
+  background-color: black;
+}
+
+.videos {
   width: 100%;
   height: auto;
   background-color: antiquewhite;
@@ -236,15 +267,20 @@ nav :hover {
   padding: 10px;
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-around;
 }
-.blog h2 {
+.videos h2 {
   font-size: 20px;
   color: orange;
+}
+.videos :hover {
+  transform: scale(1.1);
+  transition: all 2s;
 }
 
 .nosotros {
   width: 100%;
-  height: 400px;
+  height: 200px;
   background-color: antiquewhite;
   border: 2px solid orange;
   display: flex;
@@ -270,16 +306,16 @@ nav :hover {
 }
 
 .formulario {
-  height: 800px;
   width: 100%;
+  height: auto;
   display: flex;
   flex-wrap: wrap;
-  border: 2px solid black;
+  justify-content: space-around;
 }
 
 .form1 {
-  height: 400px;
-  width: 100%;
+  height: 600px;
+  width: 500px;
   background-image: url(../imagenes/comprobacion-datos-computadora-p.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -287,9 +323,9 @@ nav :hover {
 
 .form2 {
   background-color: white;
-  height: 300px;
-  width: 100%;
-  padding: 10px;
+  height: 500px;
+  width: 450px;
+  padding: 20px;
   font-size: 15px;
 }
 .form2 h2 {
@@ -341,7 +377,67 @@ nav :hover {
 
 @media screen and (min-whidt: 768px) {
   .nos {
+    height: 400px;
+    width: 100%;
     display: flex;
     flex-wrap: nowrap;
+  }
+}
+@media screen and (min-whidt: 768px) {
+  .servicios2 {
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+  }
+}
+@media screen and (min-whidt: 768px) {
+  .producto {
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+  }
+}
+@media screen and (min-whidt: 768px) {
+  .nosotros {
+    width: 100%;
+    height: auto;
+  }
+}
+@media screen and (min-whidt: 1024px) {
+  .nos {
+    height: 400px;
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+  }
+}
+@media screen and (min-whidt: 1024px) {
+  .formulario {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+  }
+}
+@media screen and (min-whidt: 1024px) {
+  .nosotros {
+    width: 100%;
+    height: 200px;
+    background-color: antiquewhite;
+    border: 2px solid orange;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  span {
+    font-family: "Caveat";
+    font-size: 40px;
+    color: salmon;
+  }
+  p {
+    margin: 10px;
+    text-align: left;
+    line-height: 1;
+    font-size: 30px;
   }
 }/*# sourceMappingURL=estilos.css.map */
